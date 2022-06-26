@@ -1,0 +1,28 @@
+.top-thing {
+  text-transform: lowercase;
+  row-gap: 30px;
+  top:0;
+  left:0;
+  right:0;
+  z-index: 103;
+  margin: 4px;
+  border-radius: 50px;
+}
+
+.top-thing p {
+  margin-bottom: 0;
+}
+
+.top-thing.showing {
+  padding: 24px;
+}
+
+.top-thing-overlay {
+  opacity: 0;
+  z-index: 102;
+  transition: opacity 500ms;
+}
+
+.top-thing-overlay.show {
+  opacity: 0.6;
+}
