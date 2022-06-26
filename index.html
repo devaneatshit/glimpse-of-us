@@ -54,7 +54,7 @@
         </div>
         <div class="flex-grow-1 justify-content-center d-flex">
           <p class="gold">
-            spin joji's new single "glimpse of us” literally, with your phone
+            be the first to listen to weezer's latest single “records” by spinning it yourself&#8212; with your body.
           </p>
         </div>
       </section>
@@ -85,7 +85,8 @@
     </template>
 
     <template id="song-completed">
-      <p class="dark-blue">you've reached the end of "glimpse of us"</p>
+      <img src="/images/completed.webp" width="206" alt="">
+      <p class="dark-blue">you've reached the end of "records"</p>
       <div>
         <button class="cta js-completed-share-button bg-dark-blue cream futura" style="margin-bottom:10px;">share</button>
         <button class="cta js-completed-restart dark-blue futura">do it again</button>
@@ -101,7 +102,8 @@
     <template id="loading-screen">
       <div class="loading-screen d-flex align-items-center justify-content-center js-loading-screen">
         <div class="d-flex align-items-center justify-content-center">
-          <span class="cream">loading "glimpse of us"…</span>
+          <img src="/images/spinner.svg" class="rotating" alt="">
+          <span class="cream">loading "records"…</span>
         </div>
       </div>
     </template>
@@ -167,9 +169,13 @@
           <div class="vinyl-svg blur-me">
             <img class="no-pointer-events" src="/images/vinyl.svg" alt="">
           </div>
-          <!-- felt was here, looked ugly and i fucked up the svg and it didnt fit etc, got rid of it -->
+          <div class="felt">
+            <img src="/images/felt.webp" alt="">
+          </div>
         </div>
-          <!-- shadow was here, looked bad since i (again,) fucked up the svg but its fine -->
+        <div class="progress no-pointer-events full-height">
+          <div class="progress-shadow"></div>
+        </div>
       </div>
     </div>
 
@@ -195,8 +201,8 @@
 
     <div class="video_contain desktop">
       <div class="gradient-overlay"></div>
-      <video loop autoplay mute id="spinning-background" poster="https://i.ytimg.com/vi/NgsWGfUlwJI/maxresdefault.jpg">
-      </video>
+      <img id="spinning-background" src="https://i.ytimg.com/vi/NgsWGfUlwJI/maxresdefault.jpg">
+      </img>
     </div>
 
     <div class="get-off-my-lawn d-flex align-items-center justify-content-center full-width full-height bg-dark-blue cream">
